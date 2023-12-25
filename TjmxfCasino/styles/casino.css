@@ -1,0 +1,68 @@
+/*
+  Name: Travis Jenkins
+  Pawprint: tjmxf
+  Date: 2021-12-08
+  Challenge: Final Project Fall 21
+
+      References:
+          1) https://fonts.google.com/specimen/Acme#standard-styles
+*/
+
+body {
+  /* Font: https://fonts.google.com/specimen/Acme#standard-styles */
+  font-family: "Acme", sans-serif;
+  /* End Font: https://fonts.google.com/specimen/Acme#standard-styles */
+  letter-spacing: 0.05rem;
+  background-color: #e0e0e0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.row {
+  padding: 10px;
+}
+
+.reels-row {
+  margin: 0 auto;
+  max-width: 50rem;
+  border: 3mm ridge rgba(110, 110, 115, 0.45);
+  padding: 0;
+}
+
+.reels {
+  width: 33.33%;
+  padding: 10px;
+  background-color: whitesmoke;
+}
+
+#reel1 {
+  border-right: 2px groove rgba(110, 110, 115, 0.45);
+}
+
+#reel2 {
+  border-left: 2px groove rgba(110, 110, 115, 0.45);
+  border-right: 2px groove rgba(110, 110, 115, 0.45);
+}
+
+#reel3 {
+  border-left: 2px groove rgba(110, 110, 115, 0.45);
+}
+
+#bet {
+  width: 110px;
+}
+
+#pull-button {
+  width: 15rem;
+}
+
+.rules {
+  width: 25px;
+}
+
+#youtubeIframe {
+  width: 560px;
+  height: 315px;
+}

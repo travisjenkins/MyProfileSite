@@ -1,0 +1,76 @@
+/********************** PROFILE / HOME PAGE **********************/
+.section-intro {
+  background-color: #e7e7de;
+  color: #0f3057;
+  padding: 20px 5px;
+}
+
+#my-picture {
+  position: relative;
+  margin-top: 3%;
+  margin-bottom: 1%;
+  width: 15%;
+  max-width: 40%;
+  border: 1px solid black;
+  border-radius: 5%;
+  /*
+        Generated at: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Backgrounds_and_Borders/Box-shadow_generator
+      */
+  box-shadow: 5px 5px 5px 0px #adaaa9;
+  /* End MDN's box shadow generator content */
+}
+
+/********************** EXPERIENCE SECTION **********************/
+.section-experience {
+  background-color: #00587a;
+  color: #e7e7de;
+  padding: 20px 5px;
+}
+
+.exp-header {
+  text-decoration: underline;
+}
+
+.exp-table tr th,
+td {
+  padding: 6px;
+  vertical-align: middle;
+}
+
+.exp-table tr td:nth-child(2) {
+  padding-left: 15%;
+  text-align: left;
+}
+
+/********************** EDUCATION SECTION **********************/
+.section-edu {
+  background-color: #0f3057;
+  color: #e7e7de;
+  padding: 20px 5px;
+}
+
+.label-degree {
+  font-style: italic;
+}
+
+.comptia-logo {
+  height: 90px;
+  width: 100px;
+}
+
+.comptia-logo:hover {
+  opacity: 70%;
+}
+
+.networkplus-link,
+.securityplus-link {
+  text-decoration: none;
+}
+
+.networkplus-link {
+  margin-right: 5px;
+}
+
+.securityplus-link {
+  margin-left: 5px;
+}

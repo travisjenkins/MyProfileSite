@@ -1,0 +1,23 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+/********************** GLOBAL CLASS SELECTORS **********************/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbar {
+  background-color: #0f3057;
+}

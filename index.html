@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!--
+    Name: Travis Jenkins
+    Pawprint: tjmxf
+    Date: 2021-09-08
+    Challenge: Multi-Column Layout F21
+
+    References:
+        1) https://www.favicon.cc/
+        2) https://giphy.com/
+        3) https://fonts.google.com/specimen/Roboto
+        4) https://github.com/logos
+        5) https://www.w3schools.com/howto/howto_html_download_link.asp
+        6) https://brand.linkedin.com/downloads
+        7) https://www.w3schools.com/css/css_rwd_viewport.asp
+-->
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travis Jenkins Portfolio</title>
+    <!-- Favicon generated at:  https://www.favicon.cc/ -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
+    <!-- End Favicon -->
+    <!-- Font from Google: https://fonts.google.com/specimen/Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans"
+    />
+    <!-- End font from Google: https://fonts.google.com/specimen/Roboto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/site.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/profile.css" />
+  </head>
+  <body class="text-center">
+    <main>
+      <!-- <nav class="navbar">
+        <div class="nav-item nav-active">
+          <a id="nav-my-name" href="./">Travis Jenkins</a>
+        </div>
+        <div class="nav-item">
+          <a id="nav-skills" href="./Skills">Skills</a>
+        </div>
+        <div class="nav-item">
+          <a id="nav-courses" href="./Courses">Courses</a>
+        </div>
+        <div class="nav-item">
+          <a id="nav-projects" href="./Projects">Projects</a>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../">Travis Jenkins</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-control="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Skills/">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Courses/">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Projects/">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="section-intro pt-5">
+        <div>
+          <img
+            src="./images/Profile-Pic.jpg"
+            alt="Travis Jenkins"
+            id="my-picture"
+          />
+        </div>
+        <div class="intro-narrative">
+          <h1 id="my-name">Travis Jenkins</h1>
+          <h4 class="my-3">Full-Stack Web / Mobile Applications Developer</h4>
+          <div class="container text-start">
+            <p>
+              I retired from the United States Air Force (USAF) in 2019 after serving 20 years 
+              and 1 month as an Aircraft Mechanic. I graduated from the University of 
+              Missouri (Mizzou) in the fall of 2023 with a BS in Information Technology. 
+              I am working on changing careers to become a full-stack web / mobile application 
+              developer.
+            </p>
+            <p>
+              I am CompTIA Network+, and Security+ CE certified to meet current 
+              DoD 8570.01-M IAT Level II requirements for the IA Workforce. While 
+              at Mizzou, I also received a Web and Mobile Application Development 
+              certificate. Lastly, I possess various valuable skills and experience 
+              in project management, maintaining and troubleshooting client systems, 
+              servers, virtualization environments, and databases.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-experience">
+        <h2>Work Experience</h2>
+        <table class="exp-table center">
+          <thead>
+            <tr>
+              <th class="exp-header">Dates</th>
+              <th class="exp-header">Title</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jan 2020 - May 2020</td>
+              <td>M1 Support Services - Senior Computer Systems Analyst</td>
+            </tr>
+            <tr>
+              <td>Dec 2019 - Jan 2020</td>
+              <td>M1 Support Services - Computer Systems Analyst III</td>
+            </tr>
+            <tr>
+              <td>Dec 2018 - Dec 2019</td>
+              <td>USAF - Functional Systems Administrator</td>
+            </tr>
+            <tr>
+              <td>Apr 2016 - Dec 2018</td>
+              <td>USAF - Programs Section Lead</td>
+            </tr>
+            <tr>
+              <td>Feb 2015 - Apr 2016</td>
+              <td>
+                USAF - Superintendent, Maintenance Operations Center (MOC)
+              </td>
+            </tr>
+            <tr>
+              <td>Dec 2012 - Feb 2015</td>
+              <td>USAF - Aircraft Section Lead</td>
+            </tr>
+            <tr>
+              <td>Nov 2009 - Dec 2012</td>
+              <td>
+                USAF - Integrated Maintenance Information System (IMIS) Program
+                Manager
+              </td>
+            </tr>
+            <tr>
+              <td>Oct 2006 - Nov 2009</td>
+              <td>USAF - Aircraft Maintenance Instructor</td>
+            </tr>
+            <tr>
+              <td>Nov 1999 - Oct 2006</td>
+              <td>USAF - Aircraft Maintenance Technician</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="section-edu">
+        <h2>Education</h2>
+        <div>
+          <p>
+            <span class="label-degree">BS in Information Technology - </span>
+            <a
+              href="https://engineering.missouri.edu/academics/it/it-degrees/bs-it/"
+              target="_blank"
+            >
+              University of Missouri - Columbia
+            </a>
+          </p>
+          <p>
+            <span class="label-degree"
+              >AAS in Aviation Maintenance Technology -
+            </span>
+            <a
+              href="https://www.airuniversity.af.edu/Barnes/CCAF"
+              target="_blank"
+            >
+              Community College of the Air Force (CCAF)
+            </a>
+          </p>
+        </div>
+        <div>
+          <a
+            href="https://www.comptia.org/certifications/network"
+            target="_blank"
+            class="networkplus-link"
+          >
+            <img
+              src="./images/CompTIA-NetworkPlus-Logo.png"
+              alt="CompTIA Network+ Certified"
+              class="comptia-logo"
+            />
+          </a>
+          <a
+            href="https://www.comptia.org/certifications/security"
+            target="_blank"
+            class="securityplus-link"
+          >
+            <img
+              src="./images/CompTIA-SecurityPlus-Logo.png"
+              alt="CompTIA Security+ Certified"
+              class="comptia-logo"
+            />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container py-3">
+        <a
+          href="https://github.com/travisjenkins"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <!-- GitHub logo from: https://github.com/logos -->
+          <img
+            src="./images/GitHub-Mark-32px.png"
+            alt="GitHub Logo"
+            class="github-logo"
+          />
+          <!-- End GitHub logo from: https://github.com/logos -->
+        </a>
+        <!-- Download link code obtained from W3Schools: https://www.w3schools.com/howto/howto_html_download_link.asp -->
+        <a
+          href="./resume/Resume.docx"
+          class="btn btn-outline-primary mx-5"
+          download="TravisEJenkins-Resume"
+        >
+          Resume
+        </a>
+        <!-- End download link code from W3Schools: https://www.w3schools.com/howto/howto_html_download_link.asp -->
+        <a
+          href="https://www.linkedin.com/in/travis-jenkins-2b2907181/"
+          target="_blank"
+          class="linkedin-link"
+        >
+          <!-- LinkedIn logo from: https://brand.linkedin.com/downloads -->
+          <img
+            src="./images/LinkedIn-Blue-34.png"
+            alt="LinkedIn Logo"
+            class="text-decoration-none"
+          />
+          <!-- End LinkedIn logo from: https://brand.linkedin.com/downloads -->
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!--
+    Name: Travis Jenkins
+    Pawprint: tjmxf
+    Date: 2021-09-14
+    Challenge: Tables and Cards F21
+
+    New References:
+        1) https://getbootstrap.com/docs/4.3/getting-started/introduction/
+        2) https://fonts.google.com/specimen/Yusei+Magic?query=yu
+        3) https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travis Jenkins - Courses</title>
+    <!-- Favicon generated at:  https://www.favicon.cc/ -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico" />
+    <!-- End Favicon -->
+    <!-- Fonts from Google: https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans" />
+    <!-- End fonts from Google: https://fonts.google.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/site.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/courses.css" />
+  </head>
+  <body class="text-center">
+    <main>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../">Travis Jenkins</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-control="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Skills/">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../Courses/">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../Projects/">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="section-courses">
+        <div class="container-fluid">
+          <!-- Modified modal code from: https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/ -->
+          <div id="open-modal" class="mizzou-modal">
+            <div>
+              <a href="#close" title="Close" class="close-modal">X</a>
+              <iframe
+                class="mizzou-iframe"
+                src="https://www.youtube.com/embed/g9OBoZm_Vds"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <!-- End modified modal code from: https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/ -->
+          <div class="table-courses-wrapper">
+            <table
+              id="table-courses"
+              class="table table-sm table-dark table-striped"
+            >
+              <thead>
+                <tr class="text-center">
+                  <th colspan="6" class="table-title">
+                    Travis' Course History
+                  </th>
+                </tr>
+                <tr>
+                  <th colspan="6" title="Click for video!">
+                    <!-- Modified modal code from: https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/ -->
+                    <!-- Wrapper link to fire modal -->
+                    <a href="#open-modal" class="mizzou-link">
+                      <div class="row align-items-center text-center">
+                        <div class="col">
+                          <img
+                            src="../images/mu-tiger.png"
+                            alt="Mizzou Tiger Logo"
+                            class="img-mizzou-tiger"
+                          />
+                        </div>
+                        <div class="col-auto table-title mizzou">
+                          University of Missouri - Columbia
+                        </div>
+                        <div class="col">
+                          <img
+                            src="../images/mu-tiger.png"
+                            alt="Mizzou Tiger Logo"
+                            class="img-mizzou-tiger"
+                          />
+                        </div>
+                      </div>
+                    </a>
+                    <!-- End wrapper link to fire modal -->
+                    <!-- End modified modal code from: https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/ -->
+                  </th>
+                </tr>
+                <tr>
+                  <th>Department</th>
+                  <th>Course #</th>
+                  <th>Course Name</th>
+                  <th>Instructor</th>
+                  <th>Course Description</th>
+                  <th>Knowledge Gained</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="17" class="table-secondary fw-bolder">
+                    Information Technology
+                  </td>
+                  <td>INFOTC 1040</td>
+                  <td>Intro to Problem Solving & Programming</td>
+                  <td>Dale Musser / Kristofferson Culmer</td>
+                  <td class="table-text-left">
+                    An introduction to problem solving methods and programming
+                    concepts, providing experience in designing, developing,
+                    implementing, and testing programs.
+                  </td>
+                  <td>
+                    Problem Solving
+                    <br />
+                    Programming concepts
+                    <br />
+                    Python 3 (Console Apps)
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 1600</td>
+                  <td>Digital Systems</td>
+                  <td>Dale Musser</td>
+                  <td class="table-text-left">
+                    This course provides a foundation of knowledge of digital 
+                    systems including terminology, concepts, architecture, 
+                    processes, tools, hardware, and software.
+                  </td>
+                  <td>
+                    (See Course Description)
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 1610</td>
+                  <td>Intro to Digital Media & Design</td>
+                  <td>Chip Gubera</td>
+                  <td class="table-text-left">
+                    This project-based course is an introduction to the concepts
+                    and practices of audio design, graphic design, motion media
+                    design and basic video editing. Current technologies are
+                    employed to examine design fundamentals and applications of
+                    media design that apply to audio and video production and
+                    new media production.
+                  </td>
+                  <td>
+                    Adobe Illustrator
+                    <br />
+                    Adobe Photoshop
+                    <br />
+                    Audition
+                    <br />
+                    Adobe After Effects
+                    <br />
+                    Adobe Premier
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 2040</td>
+                  <td>Programming Languages & Paradigms</td>
+                  <td>Dale Musser</td>
+                  <td class="table-text-left">
+                    This course presents programming principles and their
+                    syntactical representation and implementation across
+                    languages including those that are compiled and interpreted.
+                    The course shows how to implement algorithms and data
+                    structures to solve problems while utilizing paradigms
+                    offered by the programming languages such as procedural,
+                    object-oriented, protocol-oriented, functional, and
+                    declarative. Language support for strong and weak typing and
+                    type safety are covered along with support for optional
+                    values. Provides experience in developing algorithms and
+                    determining their efficiency, designing application
+                    architecture, and developing applications. Building and
+                    using libraries/application programming interfaces is
+                    covered. Git and GitHub are used for code versioning and
+                    collaboration. Integrated development environments (IDEs)
+                    are used for managing, building, debugging, and testing
+                    applications.
+                  </td>
+                  <td>
+                    (See Course Description)
+                    <br />
+                    C#
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 2630</td>
+                  <td>Game Theory & Design</td>
+                  <td>Michael Tompkins</td>
+                  <td class="table-text-left">
+                    Students will develop foundational skills in game design 
+                    and theory, and become proficient in the tools used to 
+                    develop conceptual gaming environments. The student will 
+                    develop skills to discuss, develop, and demonstrate the 
+                    design process in cooperation with current game theories 
+                    and practices. The student will develop collaborative and 
+                    cooperative design techniques mirroring that of the industry.
+                  </td>
+                  <td>
+                    (See Course Description)
+                    <br />
+                    Unreal Engine
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 2810</td>
+                  <td>Fundamentals of Network Technology</td>
+                  <td>Fang Wang</td>
+                  <td class="table-text-left">
+                    This course includes an overview of networking and the
+                    common wireless standards.
+                  </td>
+                  <td>
+                    Cisco Packet Tracer
+                    <br />
+                    Wireshark
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 2830</td>
+                  <td>Web Application Development I</td>
+                  <td>Nickolas Wergeles</td>
+                  <td class="table-text-left">
+                    This course will attempt to provide a comprehensive 
+                    understanding of the evolution, the technologies, and 
+                    the tools of the Internet. In particular, issues 
+                    pertaining to the World Wide Web and Multimedia 
+                    (HTML, CGI, Web based applications) will be discussed 
+                    in detail.
+                  </td>
+                  <td>
+                    HTML
+                    <br />
+                    CSS
+                    <br />
+                    JavaScript
+                    <br />
+                    PHP
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 2910</td>
+                  <td>Cyber Security</td>
+                  <td>Aaron Scantlin</td>
+                  <td class="table-text-left">
+                    This course covers numerous platform-independent security
+                     topics including threats, problem ports and services, 
+                     theory and practice of defense in security, intrusion 
+                     detection, data security, securing remote access, 
+                     user education and support, designing a secure network 
+                     and security management.
+                  </td>
+                  <td>
+                    (See Course Description)
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 3380</td>
+                  <td>Database System</td>
+                  <td>Kristofferson Culmer</td>
+                  <td class="table-text-left">
+                    This course covers database management systems (DBMS) and 
+                    the development of applications that utilize databases 
+                    including relational/SQL and NoSQL types. Topics include 
+                    the evolution of data storage and databases, data modeling, 
+                    relational and NoSQL databases, SQL, document, graph and 
+                    key-value storage and retrieval, application development 
+                    using databases, database scaling, database trends, and 
+                    popular database systems.
+                  </td>
+                  <td>
+                    MySQL
+                    <br />
+                    Mongo DB
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 3530</td>
+                  <td>Unix Operating System</td>
+                  <td>Scottie Murrell</td>
+                  <td class="table-text-left">
+                    This course is an introduction to UNIX and UNIX-like 
+                    operating systems and interfaces, to include the file 
+                    system, command shells, text editors, pipes and filters, 
+                    input/output system, shell scripting and Regular Expressions. 
+                    The course will also incorporate an aspect of programming 
+                    in a UNIX environment, cloud computing, containers and an 
+                    introduction to System Administration.
+                  </td>
+                  <td>
+                    Unix
+                    <br />
+                    Linux
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 3850</td>
+                  <td>Computer System Administration</td>
+                  <td>Scottie Murrell</td>
+                  <td class="table-text-left">
+                    This course is an introduction to Computer System 
+                    Administration, we introduce the knowledge, skills, and 
+                    procedures required for the stable and reliable deployment, 
+                    management, and administration of an organization's computer 
+                    systems. The course covers the planning, design, installation, 
+                    maintenance, security, management tasks, tools, responsibilities, 
+                    and ethics associated with being a Computer System Administrator 
+                    for Unix/Linux server and MS Windows servers.
+                  </td>
+                  <td>
+                    Linux
+                    <br />
+                    Ansible
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4320</td>
+                  <td>Software Engineering</td>
+                  <td>Kristofferson Culmer</td>
+                  <td class="table-text-left">
+                    Software Engineering covers the principles, processes, and 
+                    professional practices used to design, develop, test, deploy, 
+                    and manage software systems in a team-based, collaborative 
+                    environment. A range of software engineering methodologies are 
+                    covered with an emphasis on agile software development using 
+                    incremental methods of managing the development activities.
+                  </td>
+                  <td>
+                    Project Management
+                    <br />
+                    Collaboration
+                    <br />
+                    JIRA
+                    <br />
+                    Agile Development
+                    <br />
+                    SCRUM
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4400</td>
+                  <td>C# / .NET Development</td>
+                  <td>Fang Wang</td>
+                  <td class="table-text-left">      	
+                    Learn how to develop and debug multi-threaded Windows desktop 
+                    applications based on the object-oriented (OO), 
+                    Model-View-Controller (MVC), and Model View ViewModel (MVVM) 
+                    paradigms using C#, .NET, Windows Presentation Foundations (WPF),
+                     and Visual Studio.
+                  </td>
+                  <td>
+                    Visual Studio
+                    <br />
+                    Windows Forms
+                    <br />
+                    WPF
+                    <br />
+                    UWP
+                    <br />
+                    Xamarin
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4401</td>
+                  <td>Python I</td>
+                  <td>Kristofferson Culmer</td>
+                  <td class="table-text-left">
+                    An introduction to the Python 3 programming language, 
+                    covering various topics and paradigms.
+                  </td>
+                  <td>
+                    Python 3
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4405</td>
+                  <td>iOS App Development I</td>
+                  <td>Dale Musser</td>
+                  <td class="table-text-left">
+                    This is a first in a series of courses on developing iOS 
+                    applications using Xcode, and the Swift programming language 
+                    on the macOS platform.
+                  </td>
+                  <td>
+                    Xcode
+                    <br />
+                    Swift
+                    <br />
+                    Storyboards
+                    <br />
+                    Swift UI
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4425</td>
+                  <td>iOS App Development II</td>
+                  <td>Dale Musser</td>
+                  <td class="table-text-left">
+                    This is the second in a series of courses on developing 
+                    iOS applications using Xcode and Swift programming language 
+                    on the macOS platform. This course covers intermediate-level 
+                    topics in application design, more complex UI implementations, 
+                    and data persistence. 
+                  </td>
+                  <td>
+                    Xcode
+                    <br />
+                    Swift
+                    <br />
+                    Swift UI
+                    <br />
+                    CoreData
+                  </td>
+                </tr>
+                <tr>
+                  <td>INFOTC 4970W</td>
+                  <td>Senior Capstone Design - Writing Intensive</td>
+                  <td>Gillian Maurer</td>
+                  <td class="table-text-left">
+                    This course is an intensive culmination and evaluation of 
+                    competencies learned and experienced in the Information 
+                    Technology Program at the University of Missouri. This 
+                    includes but is not limited to programming, software 
+                    engineering, networking, cybersecurity, design principles, 
+                    modeling and animation, media design, ethics, and XR 
+                    environments. This semester-long project-based course 
+                    assesses student teams and their ability to produce a 
+                    portfolio of work demonstrating their level of knowledge 
+                    of related fields, ability to work collaboratively, to 
+                    design and implement a project, to communication and 
+                    provide presentation, and demonstrate professionalism, 
+                    represented by the creation of a final project evaluated 
+                    by the faculty. The course is divided into three phases: 
+                    conceptualization, design and discovery, and implementation. 
+                    Students choose or are otherwise assigned to student teams 
+                    and will work with those individuals throughout the semester 
+                    to complete the work.
+                  </td>
+                  <td>
+                    Project Management
+                    <br />
+                    Collaboration
+                    <br />
+                    Communication (Verbal / Written)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-info fw-bolder">Art</td>
+                  <td>ARTGD VS 1400</td>
+                  <td>Digital Tools & Concepts</td>
+                  <td>Ric Wilson</td>
+                  <td class="table-text-left">
+                    Class will cover the basic tools used in industry standard, 
+                    graphic design digital imaging software.
+                  </td>
+                  <td>
+                    Adobe Photoshop
+                    <br />
+                    Adobe InDesign
+                    <br />
+                    Adobe Illustrator
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-primary fw-bolder">Management</td>
+                  <td>MANGMT 3000</td>
+                  <td>Principles of Management</td>
+                  <td>Steven Trick</td>
+                  <td class="table-text-left">
+                    Introduction to the basic concepts of management and 
+                    organization and their application to business operations.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td rowspan="3" class="table-danger fw-bolder">Math</td>
+                  <td>MATH 1300</td>
+                  <td>Finite Mathematics</td>
+                  <td>S. Praharaj</td>
+                  <td class="table-text-left">
+                    A selections of topics in finite mathematics such as: basic
+                    financial mathematics, counting methods and basic
+                    probability and statistics, systems of linear equations and
+                    matrices.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td>MATH 1400</td>
+                  <td>Calculus for Social & Life Sciences</td>
+                  <td>Jan Segert</td>
+                  <td class="table-text-left">
+                    The real number system, functions, analytic geometry,
+                    derivatives, integrals, maximum-minimum problems
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td>STAT 2500</td>
+                  <td>Intro to Probability & Statistics I</td>
+                  <td>Teri Christiansen</td>
+                  <td class="table-text-left">
+                    Designed primarily for students in College of Business. 
+                    Descriptive statistics, probability, random variables, 
+                    sampling distributions, estimation, confidence intervals, 
+                    hypothesis tests.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td class="table-warning fw-bolder">English</td>
+                  <td>ENGLSH 1000</td>
+                  <td>Writing & Rhetoric</td>
+                  <td>Chelsea Fabian</td>
+                  <td class="table-text-left">
+                    Emphasizes rhetorical knowledge and writing as a process, 
+                    including inventing, reading, researching, drafting, 
+                    revising, and reflecting, applicable to all college courses.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td class="table-success fw-bolder">Geology</td>
+                  <td>GEOL 1100</td>
+                  <td>Intro to the Earth w/Lab</td>
+                  <td>Martin Appold</td>
+                  <td class="table-text-left">
+                    Earth processes and products and their impact on 
+                    human needs and the environment.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td class="table-secondary fw-bolder">Economics</td>
+                  <td>ECONOM 1014</td>
+                  <td>Priciples of Microeconomics</td>
+                  <td>William (Hyung Jin) Park</td>
+                  <td class="table-text-left">
+                    A broad survey of microeconomics, from the basic market
+                    model and its many applications to market failures and
+                    policy responses. Topics include potential trade offs
+                    between efficiency and equity in competition and trade
+                    policy; determinants of wage differentials, poverty and
+                    inequality; and evaluation of the benefits and costs of
+                    government interventions in markets.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td class="table-info fw-bolder">Psychology</td>
+                  <td>PSYCH 1000</td>
+                  <td>General Psychology</td>
+                  <td>Ines Segert</td>
+                  <td class="table-text-left">
+                    Survey of theories, principles, and methods in the study of
+                    human behavior.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="table-primary fw-bolder">Nutrition</td>
+                  <td>NEP 1034</td>
+                  <td>Intro to Human Nutrition</td>
+                  <td></td>
+                  <td class="table-text-left">
+                    Basic nutrition principles, including: nutrient functions, 
+                    food sources, and needs; healthy eating tools; energy 
+                    balance and weight management; nutrition and fitness; 
+                    nutrition through the life cycle; food safety; and consumer 
+                    topics.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td>NEP 1340</td>
+                  <td>Intro to Exercise & Fitness</td>
+                  <td>Daniel Credeur</td>
+                  <td class="table-text-left">
+                    Provides students with practical information about exercise 
+                    and physical fitness.  After taking this class, students 
+                    will be prepared to be physically active, understand the 
+                    "Do's and Don'ts" of exercise, and know how to live a healthy 
+                    way of life.  As part of the course, students will assess 
+                    their current level of activity/fitness, develop a plan for 
+                    improvement, and put that plan into action.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+                <tr>
+                  <td class="table-danger fw-bolder">Peace Studies</td>
+                  <td>PEA ST 1050W</td>
+                  <td>Intro to Peace Studies - Writing Intensive</td>
+                  <td>Mesfin Woldegebriel</td>
+                  <td class="table-text-left">
+                    Interdisciplinary overview including theories on the 
+                    nature of aggression and war, case studies of contemporary 
+                    conflicts, consideration of various peace proposals, 
+                    conditions making war or peace likely.
+                  </td>
+                  <td>(See Course Description)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="container">
+            <div class="row my-5">
+              <div class="col">
+                <div class="card shadow w-25 center">
+                  <img
+                    src="../images/Profile-Pic.jpg"
+                    class="card-img-top"
+                    alt="Picture of Travis Jenkins"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title fw-bold">Travis Jenkins</h5>
+                    <p class="card-text">
+                      BS in Information Technology
+                      <br />
+                      <span class="fw-bold">Honors:</span>
+                      <br />
+                      Summa Cum Laude
+                      <br />
+                      <span class="fw-bold">Certificate:</span>
+                      <br />
+                      Web & Mobile Application Development
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                      <small><a href="mailto:tjinks123@gmail.com" class="card-link">tjinks123@gmail.com</a></small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 id="lastUpdatedBy" class="pb-3">
+            Last updated: 2023-12-23
+          </h2>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container py-3">
+        <a
+          href="https://github.com/travisjenkins"
+          target="_blank"
+          class="text-decoration-none"
+        >
+          <!-- GitHub logo from: https://github.com/logos -->
+          <img
+            src="../images/GitHub-Mark-32px.png"
+            alt="GitHub Logo"
+            class="github-logo"
+          />
+          <!-- End GitHub logo from: https://github.com/logos -->
+        </a>
+        <!-- Download link code obtained from W3Schools: https://www.w3schools.com/howto/howto_html_download_link.asp -->
+        <a
+          href="../resume/Resume.docx"
+          class="btn btn-outline-primary mx-5"
+          download="TravisEJenkins-Resume"
+        >
+          Resume
+        </a>
+        <!-- End download link code from W3Schools: https://www.w3schools.com/howto/howto_html_download_link.asp -->
+        <a
+          href="https://www.linkedin.com/in/travis-jenkins-2b2907181/"
+          target="_blank"
+          class="linkedin-link"
+        >
+          <!-- LinkedIn logo from: https://brand.linkedin.com/downloads -->
+          <img
+            src="../images/LinkedIn-Blue-34.png"
+            alt="LinkedIn Logo"
+            class="text-decoration-none"
+          />
+          <!-- End LinkedIn logo from: https://brand.linkedin.com/downloads -->
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

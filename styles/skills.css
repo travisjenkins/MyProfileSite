@@ -1,0 +1,50 @@
+/********************** SKILLS PAGE **********************/
+.section-skills {
+  background-color: #e7e7de;
+}
+
+.header {
+  padding: 1rem;
+  background-color: #0f3057;
+  color: whitesmoke;
+  border-bottom: solid 1px #000;
+}
+
+/* 
+      Wave animation from Professor Wergeles' references example: 
+      https://umsystem.instructure.com/courses/7093/pages/reference-resources-policy?module_item_id=2964719 
+    */
+.wave {
+  background-image: url(https://firebasestorage.googleapis.com/v0/b/gradedistributionappf20.appspot.com/o/water-wave-blue.png?alt=media&token=1eac676f-be90-435e-af27-4676e12f4681);
+  background-size: 200px 155%;
+  background-repeat: repeat-x;
+  background-position: 200px bottom;
+  animation: wave-animation 1s 10 linear,
+    loading-animation 10s 1 linear alternate;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0px bottom;
+  }
+  100% {
+    background-position: 200px bottom;
+  }
+}
+
+@keyframes loading-animation {
+  0% {
+    background-size: 200px 0px;
+  }
+  100% {
+    background-size: 200px 155%;
+  }
+}
+/* 
+      End wave animation from Professor Wergeles' references example:  
+      https://umsystem.instructure.com/courses/7093/pages/reference-resources-policy?module_item_id=2964719  
+    */
+
+#lastUpdatedBy {
+  font-size: medium;
+}

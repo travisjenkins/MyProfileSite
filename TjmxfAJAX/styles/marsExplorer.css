@@ -1,0 +1,76 @@
+/*
+  Name: Travis Jenkins
+  Pawprint: tjmxf
+  Date: 2021-11-12
+  Challenge: AJAX Fall 21
+
+      References:
+        1) https://colorhunt.co/palette/eeebddce12128100001b1717
+        2) https://fonts.google.com/specimen/Chakra+Petch?query=chak#standard-styles
+*/
+
+/*
+    Colors from: https://colorhunt.co/palette/eeebddce12128100001b1717
+    color palette:
+    #EEEBDD
+    #CE1212
+    #810000
+    #1B1717
+    End Colors from: https://colorhunt.co/palette/eeebddce12128100001b1717
+*/
+
+body {
+  /*
+      Google Fonts: https://fonts.google.com/specimen/Chakra+Petch?query=chak#standard-styles  
+    */
+  font-family: "Chakra Petch", sans-serif;
+  /*
+      End Google Fonts: https://fonts.google.com/specimen/Chakra+Petch?query=chak#standard-styles  
+    */
+  background-color: #810000;
+  color: #eeebdd;
+  letter-spacing: 0.05rem;
+  margin: 20px;
+}
+
+a {
+  color: #eeebdd;
+}
+
+.spinner-border {
+  width: 5rem;
+  height: 5rem;
+}
+
+.input-label {
+  background-color: #1b1717;
+  color: #eeebdd;
+}
+
+.mars-explorer-page-title {
+  width: 75%;
+  margin: 20px auto;
+  border: 2px solid #eeebdd;
+  text-align: center;
+}
+
+.form-column {
+  border: 1px solid #eeebdd;
+}
+
+.picture-column {
+  border: 1px solid #eeebdd;
+}
+
+.rover-info-column {
+  border: 1px solid #eeebdd;
+}
+
+.modal-header,
+.modal-footer {
+  background-color: #810000;
+}
+
+.modal-body {
+  color: #1b1717;
+}

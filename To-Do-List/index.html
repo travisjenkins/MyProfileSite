@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+    Name: Travis Jenkins
+    Pawprint: tjmxf
+    Date: 2021-10-05
+    Challenge: To-Do List F21
+
+    References:
+        1) https://www.favicon.cc/
+        2) https://fonts.google.com/specimen/Roboto
+        3) https://github.com/logos
+        4) https://www.w3schools.com/howto/howto_html_download_link.asp
+        5) https://brand.linkedin.com/downloads
+        6) https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <!-- Favicon generated at:  https://www.favicon.cc/ -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon.ico"
+    />
+    <!-- End Favicon -->
+    <!-- Font from Google: https://fonts.google.com/specimen/Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans"
+    />
+    <!-- End font from Google: https://fonts.google.com/specimen/Roboto -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../styles/site.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../styles/todo-list-light.css"
+    />
+  </head>
+  <body class="text-center">
+    <div class="container">
+      <div class="row justify-content-between mt-4 ms-2 ms-md-0 me-5 me-md-0">
+        <div class="col-2">
+          <a href="../Projects/" class="">Return</a>
+        </div>
+        <div class="col-2">
+          <button id="theme-toggler" class="btn btn-outline-info" onclick="toggleTheme(this)">
+            Dark Theme
+          </button>
+        </div>
+      </div>
+      <!-- Unecessary, but meets requirements -->
+      <div class="todo-list-holder mt-3 mb-5">
+        <h2 ondblclick="updateTitle(this)">To-Do List</h2>
+        <table class="table" id="todo-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Priority</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="todo-holder">
+            <!-- Use JavaScript to add To-Do items here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="border border-5 border-dark p-3 mt-5 rounded" id="form-container">
+        <form id="add-todo-form" class="needs-validation" novalidate>
+          <h4 class="">Add a To-Do</h4>
+          <div class="row m-4">
+            <div class="col-md-3">
+              <div class="form-floating mb-3 mb-md-0">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title" aria-required="true" required />
+                <label for="title" class="form-label text-dark">Title</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a title.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-floating mb-3 mb-md-0">
+                <select class="form-select" id="ddl-type" name="type" aria-label="Type" aria-required="true" required>
+                  <option value="">Select...</option>
+                  <option value="Homework">Homework</option>
+                  <option value="Project">Project</option>
+                  <option value="Quiz">Quiz</option>
+                  <option value="Test">Test</option>
+                </select>
+                <label for="ddl-type" class="form-label text-dark">Type</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please select a type.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class=" mb-3 mb-md-0">
+                <label for="priority" class="form-label" id="priority-label">Priority</label>
+                <input class="form-range" type="range" id="priority" name="priority" min="1" max="5" step="1" value="1" onchange="updatePriority()" aria-required="true" required />
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please assign a prority.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-floating">
+                <input class="form-control" type="date" id="date" name="date" placeholder="date" aria-required="true" required />
+                <label for="date" class="form-label text-dark">Date</label>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback" id="invalid-date-elm">
+                  Please enter a valid date.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" id="addToDoBtn" class="btn btn-outline-primary me-3" onclick="addToDoItem()">
+                Add
+              </button>
+              <button class="btn btn-outline-secondary" type="reset" onclick="resetForm()">Clear</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="../js/todo-list.js"></script>
+  </body>
+</html>
