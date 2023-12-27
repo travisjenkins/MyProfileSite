@@ -1,0 +1,90 @@
+body {
+  background-color: #011f3f;
+}
+
+label {
+  font-family: "Press Start 2P", cursive;
+  font-size: x-small;
+  font-weight: normal;
+  color: #fef2bf;
+}
+
+a {
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+  font-size: x-small;
+}
+
+a:hover, a:focus {
+  color: #ffe572;
+}
+
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+}
+
+.start-col,
+.reset-col {
+  max-width: 80px;
+}
+
+.start {
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(199, 2, 2);
+}
+
+.reset {
+  border-radius: 50%;
+  border: 5px solid black;
+  height: 30px;
+  width: 30px;
+  background-color: darkorange;
+}
+
+.difficulty-col {
+  max-width: 125px;
+}
+
+.difficulty {
+  height: 25px;
+}
+
+.simon-btn {
+  margin: 0.3rem;
+  height: 8rem;
+  width: 8rem;
+  border: 5px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
