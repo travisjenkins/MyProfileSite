@@ -1,19 +1,3 @@
-/*
-  Name: Travis Jenkins
-  Pawprint: tjmxf
-  Date: 2021-11-12
-  Challenge: AJAX Fall 21
-
-      References:
-        1) https://www.javascripttutorial.net/dom/manipulating/remove-all-child-nodes/#:~:text=%20To%20remove%20all%20child%20nodes%20of%20a,there%20is%20no%20remaining%20child%20node.%20More%20
-        2) https://www.samanthaming.com/pictorials/how-to-capitalize-a-string/
-        3) https://umsystem.instructure.com/courses/7093/pages/challenge-9-starter-information?module_item_id=3420835
-        4) https://en.wikipedia.org/wiki/Spirit_(rover)
-        5) https://en.wikipedia.org/wiki/Opportunity_(rover)
-        6) https://en.wikipedia.org/wiki/Curiosity_(rover)
-        7) https://en.wikipedia.org/wiki/Perseverance_(rover)
-*/
-
 "use strict";
 // Global variables
 const api_key = "pUKpAc7UOqZHGsJ0lgjiuPKPRafCZALvwjXd1vT1";
