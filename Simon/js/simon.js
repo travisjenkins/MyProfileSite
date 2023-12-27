@@ -34,8 +34,17 @@
     }
   };
 
+  // Preload audio files
+  const audioFiles = ["blue.mp3", "green.mp3", "red.mp3", "wrong.mp3", "yellow.mp3"];
+  const audioPlayers = audioFiles.map(function(file) 
+  {
+    let audio = new Audio();
+    audio.src = `sounds/${file}`;
+    audio.preload = "auto";
+    return audio;
+  });
   const playSound = (name) => {
-    const sound = new Audio(`sounds/${name}.mp3`);
+    const sound = audioPlayers.find(obj => obj.src.includes(name));
     sound.play();
   };
 
