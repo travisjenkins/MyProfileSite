@@ -11,7 +11,13 @@
 }
 
 .img-mizzou-tiger {
-  height: 60px;
+  height: 30px;
+}
+
+@media (min-width: 768px) {
+  .img-mizzou-tiger {
+    height: 60px;
+  }
 }
 
 #table-courses > thead > tr:first-child {
@@ -129,12 +135,6 @@
 
 /* End modal code from: https://jsfiddle.net/kumarmuthaliar/GG9Sa/1/ */
 
-.mizzou-link {
-  text-decoration: none;
-  color: #e7e7de;
-}
-
-.mizzou-link:hover {
-  text-decoration: none;
-  color: #e7e7de;
+.card {
+  min-width: 350px;
 }
