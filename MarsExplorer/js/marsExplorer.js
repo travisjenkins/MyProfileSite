@@ -1,6 +1,6 @@
 "use strict";
 // Global variables
-const api_key = "pUKpAc7UOqZHGsJ0lgjiuPKPRafCZALvwjXd1vT1";
+const api_key = "0nBn6sWDZSu7i60A2SN8YPlhbwELODbkWOcbMgTu";
 const rovers = [];
 const allManifests = {};
 
